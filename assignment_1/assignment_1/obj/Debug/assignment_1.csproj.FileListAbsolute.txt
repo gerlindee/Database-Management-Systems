@@ -1,0 +1,10 @@
+D:\facultate\! semestrul 4\database management systems\assignment_1\assignment_1\bin\Debug\assignment_1.exe.config
+D:\facultate\! semestrul 4\database management systems\assignment_1\assignment_1\bin\Debug\assignment_1.exe
+D:\facultate\! semestrul 4\database management systems\assignment_1\assignment_1\bin\Debug\assignment_1.pdb
+D:\facultate\! semestrul 4\database management systems\assignment_1\assignment_1\obj\Debug\assignment_1.csprojAssemblyReference.cache
+D:\facultate\! semestrul 4\database management systems\assignment_1\assignment_1\obj\Debug\assignment_1.Form1.resources
+D:\facultate\! semestrul 4\database management systems\assignment_1\assignment_1\obj\Debug\assignment_1.Properties.Resources.resources
+D:\facultate\! semestrul 4\database management systems\assignment_1\assignment_1\obj\Debug\assignment_1.csproj.GenerateResource.cache
+D:\facultate\! semestrul 4\database management systems\assignment_1\assignment_1\obj\Debug\assignment_1.csproj.CoreCompileInputs.cache
+D:\facultate\! semestrul 4\database management systems\assignment_1\assignment_1\obj\Debug\assignment_1.exe
+D:\facultate\! semestrul 4\database management systems\assignment_1\assignment_1\obj\Debug\assignment_1.pdb

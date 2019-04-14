@@ -1,0 +1,20 @@
+D:\facultate\! semestrul 4\database management systems\assignment_2\assignment_2\bin\Debug\assignment_2.exe.config
+D:\facultate\! semestrul 4\database management systems\assignment_2\assignment_2\bin\Debug\assignment_2.exe
+D:\facultate\! semestrul 4\database management systems\assignment_2\assignment_2\bin\Debug\assignment_2.pdb
+D:\facultate\! semestrul 4\database management systems\assignment_2\assignment_2\obj\Debug\assignment_2.csprojAssemblyReference.cache
+D:\facultate\! semestrul 4\database management systems\assignment_2\assignment_2\obj\Debug\assignment_2.Properties.Resources.resources
+D:\facultate\! semestrul 4\database management systems\assignment_2\assignment_2\obj\Debug\assignment_2.csproj.GenerateResource.cache
+D:\facultate\! semestrul 4\database management systems\assignment_2\assignment_2\obj\Debug\assignment_2.csproj.CoreCompileInputs.cache
+D:\facultate\! semestrul 4\database management systems\assignment_2\assignment_2\obj\Debug\assignment_2.exe
+D:\facultate\! semestrul 4\database management systems\assignment_2\assignment_2\obj\Debug\assignment_2.pdb
+D:\facultate\! semestrul 4\database management systems\assignment_2\assignment_2\obj\Debug\assignment_2.Form1.resources
+D:\facultate\semestrul 4\database management systems\assignment_2\assignment_2\bin\Debug\assignment_2.exe.config
+D:\facultate\semestrul 4\database management systems\assignment_2\assignment_2\bin\Debug\assignment_2.exe
+D:\facultate\semestrul 4\database management systems\assignment_2\assignment_2\bin\Debug\assignment_2.pdb
+D:\facultate\semestrul 4\database management systems\assignment_2\assignment_2\obj\Debug\assignment_2.csprojAssemblyReference.cache
+D:\facultate\semestrul 4\database management systems\assignment_2\assignment_2\obj\Debug\assignment_2.Form1.resources
+D:\facultate\semestrul 4\database management systems\assignment_2\assignment_2\obj\Debug\assignment_2.Properties.Resources.resources
+D:\facultate\semestrul 4\database management systems\assignment_2\assignment_2\obj\Debug\assignment_2.csproj.GenerateResource.cache
+D:\facultate\semestrul 4\database management systems\assignment_2\assignment_2\obj\Debug\assignment_2.csproj.CoreCompileInputs.cache
+D:\facultate\semestrul 4\database management systems\assignment_2\assignment_2\obj\Debug\assignment_2.exe
+D:\facultate\semestrul 4\database management systems\assignment_2\assignment_2\obj\Debug\assignment_2.pdb
