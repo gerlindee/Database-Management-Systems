@@ -1,0 +1,2 @@
+/* create a stored procuedure that inserts data in tables that are in a n:m relationship; if an insert fails, try to recover as much as possible from the entire operation: 
+for example, if the user wants to add a team and its members, succeeds adding the superheroes, but fails with the team, the superheroes should remain in the database */
