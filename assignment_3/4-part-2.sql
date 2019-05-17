@@ -10,7 +10,7 @@
 SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED
 BEGIN TRANSACTION
 SELECT * FROM Superheroes -- value will be displayed as the updated one => "Dirty read"
-WAITFOR DELAY '00:00:25'
+WAITFOR DELAY '00:00:15'
 SELECT * FROM Superheroes -- value will be displayed as it actually is in the database, not updated, due to rolling back in T1
 COMMIT TRANSACTION
 
@@ -74,6 +74,7 @@ COMMIT TRANSACTION
 -- T2 will be terminated as deadlock victim and the values that remain are the ones from T1
 
 -- Solution => set deadlock_priorty as HIGH
+SET DEADLOCK_PRIORITY HIGH
 BEGIN TRANSACTION
 UPDATE Superheroes SET secretIdentity = 'Dinah Drake' WHERE alterEgo = 'Black Canary'
 WAITFOR DELAY '00:00:10'
