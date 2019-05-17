@@ -24,3 +24,6 @@ CREATE TABLE MemberOf (
 	FOREIGN KEY (superheroID) REFERENCES Superheroes(id),
 	FOREIGN KEY (teamID) REFERENCES Teams(id)
 )
+
+ALTER TABLE MemberOf
+ADD yearsActive int
