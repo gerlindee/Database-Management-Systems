@@ -59,3 +59,24 @@ SELECT * FROM Superheroes
 WAITFOR DELAY '00:00:25'
 SELECT * FROM Superheroes
 COMMIT TRANSACTION
+
+-- 4) Deadlock = occurs when 2 processes are competing for exlusive access to a resource but is unable to obtain it, because the other process is preventing it
+	-- there is no isolation 
+
+-- T2 - deadlocks happen even under isolation level serializable
+BEGIN TRANSACTION
+UPDATE Superheroes SET secretIdentity = 'Dinah Drake' WHERE alterEgo = 'Black Canary'
+WAITFOR DELAY '00:00:10'
+-- exclusive lock on Superheroes
+UPDATE Teams SET base = 'The Aeries' WHERE name = 'Birds of Prey'
+-- this will be blocked by T1, both are blocked by T1 and T2
+COMMIT TRANSACTION 
+-- T2 will be terminated as deadlock victim and the values that remain are the ones from T1
+
+-- Solution => set deadlock_priorty as HIGH
+BEGIN TRANSACTION
+UPDATE Superheroes SET secretIdentity = 'Dinah Drake' WHERE alterEgo = 'Black Canary'
+WAITFOR DELAY '00:00:10'
+UPDATE Teams SET base = 'The Aeries' WHERE name = 'Birds of Prey'
+-- T1 will be terminated as deadlock victim and the values that remain are the ones from T2
+COMMIT TRANSACTION 

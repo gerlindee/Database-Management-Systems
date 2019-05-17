@@ -28,3 +28,13 @@ WAITFOR DELAY '00:00:15'
 INSERT INTO Superheroes(secretIdentity, alterEgo, species, homeBase) VALUES ('Ororo Munroe','Storm','Mutant','New York')
 COMMIT TRANSACTION
 
+-- 4) Deadlock
+	-- T1 = update + delay + update
+
+BEGIN TRANSACTION
+UPDATE Superheroes SET alterEgo = 'Batgirl' WHERE secretIdentity = 'Barbara Gordon'
+-- exclusive lock on Superheroes
+WAITFOR DELAY '00:00:10'
+-- T2 called
+UPDATE Teams SET base = 'Asgard' WHERE name = 'The Revengers'
+COMMIT TRANSACTION
