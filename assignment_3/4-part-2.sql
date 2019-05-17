@@ -63,7 +63,7 @@ COMMIT TRANSACTION
 -- 4) Deadlock = occurs when 2 processes are competing for exlusive access to a resource but is unable to obtain it, because the other process is preventing it
 	-- there is no isolation 
 
--- T2 - deadlocks happen even under isolation level serializable
+-- T2 - deadlocks happen even under any isolation level
 BEGIN TRANSACTION
 UPDATE Superheroes SET secretIdentity = 'Dinah Drake' WHERE alterEgo = 'Black Canary'
 WAITFOR DELAY '00:00:10'
