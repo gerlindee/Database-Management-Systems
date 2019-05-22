@@ -1,0 +1,44 @@
+
+CREATE TABLE Users (
+	UserID INT PRIMARY KEY IDENTITY(1, 1),
+	Username VARCHAR(100),
+	City VARCHAR(100),
+	DOB DATE
+)
+
+CREATE TABLE Categories (
+	CID INT PRIMARY KEY IDENTITY(1, 1),
+	CName VARCHAR(100),
+	CDescription VARCHAR(100)
+)
+
+CREATE TABLE Posts (
+	PID INT PRIMARY KEY IDENTITY(1, 1),
+	PDate DATE,
+	PText VARCHAR(200),
+	Shares INT,
+	UserID INT REFERENCES Users(UserID)
+)
+
+CREATE TABLE Pages (
+	PID INT PRIMARY KEY IDENTITY(1, 1),
+	PName VARCHAR(100),
+	CID INT REFERENCES Categories(CID)
+)
+
+-- comments are annonymous -> no relation between users and comments
+-- top com is a flag
+CREATE TABLE Comments (
+	CID INT PRIMARY KEY IDENTITY(1, 1),
+	CDate DATE,
+	CText VARCHAR(200),
+	TopCom BIT,
+	PID INT REFERENCES Posts(PID) 
+)
+
+CREATE TABLE Likes (
+	UserID INT REFERENCES Users(UserID),
+	PageID INT REFERENCES Pages(PID),
+	LDate DATE,
+	PRIMARY KEY(UserID, PageID)
+)
