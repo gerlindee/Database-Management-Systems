@@ -11,7 +11,7 @@ UPDATE Superheroes set alterEgo = 'Batgirl' where secretIdentity = 'Barbara Gord
 WAITFOR DELAY '00:00:10'
 ROLLBACK TRANSACTION
 
--- 2) Dirty reads
+-- 2) Non-repeatable reads
 	-- T1 = insert + delay + update + commit
 
 INSERT INTO Superheroes(secretIdentity, alterEgo, species, homeBase) VALUES ('Scott Summers','Cyclops','Mutant','New York')
